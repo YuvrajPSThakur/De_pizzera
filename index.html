@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>De Pizzera</title>
+</head>
+
+<body style="background-image: url('assets/bgi.jpg'); background-color: rgb(196, 255, 235); opacity: .9; background-attachment: fixed;">
+
+<div class="heading-wrapper">
+<div class="geeks">
+    <h1> Welcome to Pizzera </h1>
+    <h2>The absolute best place for pizza</h2>
+</div>
+</div>
+<!--<div class="contact-us">
+    <h3>Contact us</h3>
+
+</div>
+-->
+<div class="menu-wrapper">
+    Bon Appétit
+<ul id = "menu-list" class="navigator">
+    <li><button id="home">Home</button></li>
+    <li><button id ="menu">Menu</button></li>
+    <li><button id = "contact">Contact us</button></li>
+
+</ul>
+
+<div class="box-container" id = "menu-tab">
+    <div class="box">
+        <img class="image" src = "assets/s1.jpg">
+        <div class="content">
+            <h3>Veg pizza</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src = "assets/s-4.jpg">
+        <div class="content">
+            <h3>Green waves</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src = "assets/s-3.jpg">
+        <div class="content">
+            <h3>Corn and cheese</h3>
+        </div>
+    </div>
+</div>
+<div class="home" id ="home-tab">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
+    facere necessitatibus corrupti voluptates, corporis excepturi rerum sapiente quos 
+    nulla ipsa, quam ea velit dicta modi voluptas officiis cumque? Magni, nisi.
+
+
+
+</div>
+<div class="contact" id ="contact-tab">
+   Call me when you want 
+
+
+
+</div>
+</div>
+    
+    <script>
+       
+       
+
+       const navigate = document.getElementById("home");
+       navigate.addEventListener('click', e =>{
+           
+           document.getElementById('menu-tab').style.display = 'none';
+           document.getElementById('contact-tab').style.display = 'none';
+    
+        document.getElementById('home-tab').style.display = 'inline';
+
+       })
+
+       const navigate1 = document.getElementById("menu");
+       navigate1.addEventListener('click', e =>{
+           
+           document.getElementById('contact-tab').style.display = 'none';
+           document.getElementById('home-tab').style.display = 'none';
+    
+        document.getElementById('menu-tab').style.display = 'inline';
+
+       })
+
+       const navigate2 = document.getElementById("contact");
+       navigate2.addEventListener('click', e =>{
+        document.getElementById('home-tab').style.display = 'none';
+           document.getElementById('menu-tab').style.display = 'none';
+    
+        document.getElementById('contact-tab').style.display = 'inline';
+
+       })
+
+        
+    </script>
+</body>
+</html>
